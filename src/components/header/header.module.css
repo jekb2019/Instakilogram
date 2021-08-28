@@ -1,0 +1,88 @@
+@value makerLightGray from '../../common/colors.css';
+@value makerGray from '../../common/colors.css';
+@value makerWhite from '../../common/colors.css';
+@value fontMedium from '../../common/sizes.css';
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: makerWhite;
+  border-bottom: 1px solid makerGray;
+}
+
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  width: 1064px;
+}
+
+.contentWrapper div {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logoWrapper {
+  position: relative;
+}
+
+.logoWrapper a {
+  position: absolute;
+  left: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.searchBar {
+  width: 200px;
+  height: 27px;
+  border: 1px solid makerGray;
+  border-radius: 3px;
+  background-color: makerLightGray;
+  padding-left: 25px;
+  font-size: fontMedium;
+}
+
+.searchBarWrapper {
+  justify-content: center;
+}
+
+.searchBar:focus {
+  outline: none;
+}
+
+.menuWrapper {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  right: 40px;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 7px;
+}
+
+.menu li a {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 23px;
+}
+
+.profileImg {
+  width: 23px;
+  border-radius: 50%;
+}
