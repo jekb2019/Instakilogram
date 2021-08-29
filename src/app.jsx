@@ -5,15 +5,11 @@ import PageWrapper from './components/pageWrapper/pageWrapper';
 import Posts from './components/posts/posts';
 import SideBar from './components/sideBar/sideBar';
 import StoryBoard from './components/storyBoard/storyBoard';
-import { stories } from './data/stories';
-import { posts } from './data/posts';
-import { userInfo } from './data/userInfo';
 
-function App() {
-  const profileUrl = 'https://picsum.photos/200';
+function App({ stories, posts, userInfo }) {
   return (
     <div className={styles.app}>
-      <Header profileUrl={profileUrl} />
+      <Header profileUrl={userInfo.profileUrl} />
       <PageWrapper>
         <Feed>
           <StoryBoard stories={stories} />
