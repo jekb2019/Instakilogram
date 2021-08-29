@@ -1,6 +1,6 @@
 import styles from './app.module.css';
 import Header from './components/header/header';
-import PageWrapper from './components/mainPage/pageWrapper';
+import PageWrapper from './components/pageWrapper/pageWrapper';
 
 function App() {
   const profileUrl = 'https://picsum.photos/200';

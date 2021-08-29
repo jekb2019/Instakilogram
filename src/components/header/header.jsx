@@ -1,66 +1,24 @@
 import React from 'react';
 import styles from './header.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-
-import {
-  faHeart,
-  faCompass,
-  faPaperPlane,
-  faPlusSquare,
-} from '@fortawesome/free-regular-svg-icons';
 
 import logo from '../../assets/images/instagram_logo.png';
+import SearchBar from '../searchBar/searchBar';
+import Menu from '../menu/menu';
 
 const Header = ({ profileUrl }) => {
   return (
     <header className={styles.container}>
       <div className={styles.contentWrapper}>
         <div className={styles.logoWrapper}>
-          <a>
-            <img className={styles.logo} src={logo} />
+          <a href="#">
+            <img className={styles.logo} src={logo} alt="Instagram Logo" />
           </a>
         </div>
         <div className={styles.searchBarWrapper}>
-          <input
-            className={styles.searchBar}
-            type="text"
-            placeholder="Search"
-          />
+          <SearchBar />
         </div>
         <div className={styles.menuWrapper}>
-          <nav className={styles.menu}>
-            <li>
-              <a>
-                <FontAwesomeIcon icon={faHome} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a>
-                <FontAwesomeIcon icon={faPaperPlane} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a>
-                <FontAwesomeIcon icon={faPlusSquare} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a>
-                <FontAwesomeIcon icon={faCompass} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a>
-                <FontAwesomeIcon icon={faHeart} className={styles.icon} />
-              </a>
-            </li>
-            <li>
-              <a>
-                <img className={styles.profileImg} src={profileUrl} />
-              </a>
-            </li>
-          </nav>
+          <Menu profileUrl={profileUrl} />
         </div>
       </div>
     </header>

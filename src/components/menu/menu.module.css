@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  margin-right: 40px;
+}
+
+.menu li {
+  margin-left: 14px;
+}
+
+.menu li a {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.profileImg {
+  width: 25px;
+  border-radius: 50%;
+}
