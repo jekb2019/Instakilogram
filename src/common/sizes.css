@@ -1,3 +1,5 @@
 /* Font Sizes */
 @value fontMedium: 15px;
-@value makerGray: #DBDBDB;
+
+@value headerHeight: 54px;
+@value appContentWidth: 1000px;

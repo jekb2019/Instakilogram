@@ -1,5 +1,7 @@
+@value makerWhite from '../../common/colors.css';
 @value makerLightGray from '../../common/colors.css';
 @value makerGray from '../../common/colors.css';
+@value makerDarkGray from '../../common/colors.css';
 @value fontMedium from '../../common/sizes.css';
 
 .searchBarWrapper {
@@ -29,10 +31,10 @@
   top: 5px;
   right: 5px;
   border: none;
-  background-color: #c7c7c7;
+  background-color: makerDarkGray;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   font-size: 13px;
-  color: white;
+  color: makerWhite;
 }
