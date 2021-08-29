@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './posts.module.css';
 
-const Posts = () => {
+const Posts = ({ posts }) => {
   return (
     <section className={styles.posts}>
       <div></div>

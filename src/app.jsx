@@ -5,43 +5,8 @@ import PageWrapper from './components/pageWrapper/pageWrapper';
 import Posts from './components/posts/posts';
 import SideBar from './components/sideBar/sideBar';
 import StoryBoard from './components/storyBoard/storyBoard';
-
-let stories = [
-  {
-    username: 'jason123',
-    profileUrl: 'https://picsum.photos/200',
-    isRead: false,
-  },
-  {
-    username: 'hanna123',
-    profileUrl: 'https://picsum.photos/200',
-    isRead: false,
-  },
-  {
-    username: 'john123',
-    profileUrl: 'https://picsum.photos/200',
-    isRead: false,
-  },
-  {
-    username: 'robert123',
-    profileUrl: 'https://picsum.photos/200',
-    isRead: false,
-  },
-  {
-    username: 'josh123',
-    profileUrl: 'https://picsum.photos/200',
-    isRead: false,
-  },
-];
-
-// let posts = [
-//   {
-//     username: 'jason123',
-//     profileUrl: 'https://picsum.photos/200',
-//     isLiked: false,
-//     comments: [{ username: 'hanna123', isLiked: false }],
-//   },
-// ];
+import { stories } from './data/stories';
+import { posts } from './data/posts';
 
 function App() {
   const profileUrl = 'https://picsum.photos/200';
@@ -51,7 +16,7 @@ function App() {
       <PageWrapper>
         <Feed>
           <StoryBoard stories={stories} />
-          <Posts />
+          <Posts posts={posts} />
         </Feed>
         <SideBar />
       </PageWrapper>
