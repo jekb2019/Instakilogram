@@ -1,12 +1,18 @@
 import React from 'react';
-// import styles from './sideBar.module.css';
+import styles from './sideBar.module.css';
 
-const SideBar = () => {
+const SideBar = ({ userInfo }) => {
   return (
-    <aside>
-      <div>My Account</div>
-      <div>Suggestions</div>
-      <div>Policies</div>
+    <aside className={styles.container}>
+      <div className={styles.card}>
+        <img className={styles.profileImg} src={userInfo.profileUrl} />
+        <div className={styles.userInfo}>
+          <p className={styles.username}>{userInfo.username}</p>
+          <p className={styles.name}>{userInfo.name}</p>
+        </div>
+        <p className={styles.switchText}>Switch</p>
+      </div>
+      <p className={styles.policy}>&#169; 2021 INSTAGRAM FROM FACEBOOK</p>
     </aside>
   );
 };

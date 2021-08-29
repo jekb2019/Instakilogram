@@ -1,0 +1,41 @@
+.container {
+  position: sticky;
+  top: 85px;
+  padding: 20px 30px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileImg {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.userInfo {
+  padding-right: 70px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.name {
+  color: gray;
+}
+
+.switchText {
+  color: blue;
+  font-size: 13px;
+}
+
+.policy {
+  color: gray;
+  font-size: 12px;
+  margin-top: 40px;
+  text-align: center;
+}

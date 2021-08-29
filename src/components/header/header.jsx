@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './header.module.css';
-
 import logo from '../../assets/images/instagram_logo.png';
 import SearchBar from '../searchBar/searchBar';
 import Menu from '../menu/menu';

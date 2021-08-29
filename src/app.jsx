@@ -7,6 +7,7 @@ import SideBar from './components/sideBar/sideBar';
 import StoryBoard from './components/storyBoard/storyBoard';
 import { stories } from './data/stories';
 import { posts } from './data/posts';
+import { userInfo } from './data/userInfo';
 
 function App() {
   const profileUrl = 'https://picsum.photos/200';
@@ -18,7 +19,7 @@ function App() {
           <StoryBoard stories={stories} />
           <Posts posts={posts} />
         </Feed>
-        <SideBar />
+        <SideBar userInfo={userInfo} />
       </PageWrapper>
     </div>
   );

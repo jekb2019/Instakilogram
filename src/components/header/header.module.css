@@ -4,12 +4,15 @@
 @value appContentWidth from '../../common/sizes.css';
 
 .container {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: headerHeight;
   display: flex;
   justify-content: center;
   background-color: makerWhite;
   border-bottom: 1px solid makerGray;
+  z-index: 1;
 }
 
 .contentWrapper {
