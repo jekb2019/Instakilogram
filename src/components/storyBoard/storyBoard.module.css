@@ -1,10 +1,15 @@
+@value makerGray from '../../common/colors.css';
+@value makerWhite from '../../common/colors.css';
+@value makerBlack from '../../common/colors.css';
+@value makerRed from '../../common/colors.css';
+
 .container {
   position: relative;
-  border: 1px solid gray;
+  border: 1px solid makerGray;
   height: 100px;
   width: 100%;
   margin-bottom: 30px;
-  background-color: white;
+  background-color: makerWhite;
   display: flex;
   align-items: center;
 }
@@ -16,8 +21,8 @@
   height: 25px;
   border-radius: 50%;
   border: none;
-  background-color: white;
-  box-shadow: 0px 0px 3px 0px #000000;
+  background-color: makerWhite;
+  box-shadow: 0px 0px 3px 0px makerBlack;
 }
 
 .prevBtn {
@@ -44,7 +49,7 @@
 .profileImg {
   width: 60px;
   border-radius: 50%;
-  border: 2px solid red;
+  border: 2px solid makerRed;
   margin-bottom: 3px;
 }
 

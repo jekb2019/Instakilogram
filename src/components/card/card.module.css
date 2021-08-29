@@ -1,0 +1,90 @@
+@value makerWhite from '../../common/colors.css';
+@value makerGray from '../../common/colors.css';
+@value makerRed from '../../common/colors.css';
+@value makerWhite from '../../common/colors.css';
+
+.card {
+  width: 100%;
+  border: 1px solid makerGray;
+  margin-bottom: 30px;
+}
+
+.header {
+  border-bottom: 1px solid makerGray;
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header img {
+  width: 40px;
+  border-radius: 50%;
+  border: 3px solid makerRed;
+  cursor: pointer;
+}
+
+.header span {
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.header span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.moreBtn {
+  position: absolute;
+  right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+}
+
+.content img {
+  width: 100%;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: makerWhite;
+  box-shadow: 0px 0px 3px 0px makerBlack;
+}
+
+.prevBtn {
+  left: 10px;
+}
+
+.nextBtn {
+  right: 10px;
+}
+
+.comments {
+  width: 100%;
+}
+
+.comment {
+  display: flex;
+  padding: 5px 10px;
+}
+
+.commentAuthor,
+.commentContent {
+  font-size: 15px;
+}
+
+.commentAuthor {
+  font-weight: bold;
+  margin-right: 20px;
+}

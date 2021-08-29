@@ -1,6 +1,7 @@
+@value makerWhite from '../../common/colors.css';
+
 .posts {
-  border: 1px solid gray;
-  background-color: white;
+  background-color: makerWhite;
   /* Temp height */
   height: 400px;
 }

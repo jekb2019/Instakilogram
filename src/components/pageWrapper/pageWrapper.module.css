@@ -1,13 +1,11 @@
 .container {
   margin-top: 30px;
-  height: 700px;
   width: 1000px;
   display: flex;
 }
 
 .feed {
   width: 650px;
-  border: 1px solid blue;
 }
 
 .sideBar {
