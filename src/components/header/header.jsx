@@ -10,7 +10,7 @@ const Header = ({ profileUrl }) => {
     <header className={styles.container}>
       <div className={styles.contentWrapper}>
         <div className={styles.logoWrapper}>
-          <a href="#">
+          <a href="/">
             <img className={styles.logo} src={logo} alt="Instagram Logo" />
           </a>
         </div>
